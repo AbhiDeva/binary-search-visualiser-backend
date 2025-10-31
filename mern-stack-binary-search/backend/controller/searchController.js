@@ -1,4 +1,4 @@
-import SearchHistory from "../models/searchHistory.js";
+import SearchHistory from "../models/SearchHistory.js";
 import User from '../models/User.js';
 
 export const saveSearch = async (req, res) => {

@@ -36,7 +36,7 @@ const PORT = process.env.PORT || 5000;
 
 // Vercel need to exports the app handler instead of listen()
 
-if(process.env.NODE_ENV !== production){
+if(process.env.NODE_ENV !== "production"){
 app.listen(PORT, () =>  {
     console.log(`Server running on ${PORT}`)
 });

@@ -29,6 +29,6 @@ const binaryArraySchema = new mongoose.Schema({
 })
 
 
-const BinaryArray = new mongoose.model('BinaryArray', binaryArraySchema);
+const BinaryArray = mongoose.model('BinaryArray', binaryArraySchema);
 
 export default BinaryArray;
