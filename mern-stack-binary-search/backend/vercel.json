@@ -2,19 +2,19 @@
     "version" :2,
     "builds": [
         {
-            "src" : "mern-stack-binary-search/backend/server.js",
+            "src" : "server.js",
             "use" : "@vercel/node"
         }
     ], 
     "routes" : [
         {
             "src": "/api/(.*)",
-            "dest" : "mern-stack-binary-search/backend/server.js"
+            "dest" : "/server.js"
         }, 
         {
             "src" : "/(.*)",
             "status": 404,
-            "dest": "mern-stack-binary-search/backend/server.js"
+            "dest": "/server.js"
         }
     ], 
     "env": {
