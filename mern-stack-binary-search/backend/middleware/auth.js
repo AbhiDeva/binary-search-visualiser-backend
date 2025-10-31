@@ -13,7 +13,7 @@ const checkAuth = (req, res, next) => {
         const decoded = jwt.verify(
             token, process.env.JWT_SECRET || 'your-secret-key'
         );
-        req.userId = decoded.userId,  // id is not taking 
+        req.userId = decoded.id,  // id is not taking 
         req.username = decoded.username,
         next();
     }catch(error){
